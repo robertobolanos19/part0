@@ -1,0 +1,11 @@
+title New note diagram
+
+Form_Btn->Server: browser will send the user input to the server
+
+server->browser: The server responds with HTTP status code 302. This is an HTTP POST request to the server to address a new note
+server->browser: asks the browser to do a new HTTP GET request to the address defined in the header's location
+browser->server:HTTP requests main.css
+server->browser:main.css
+browser->server:HTTP requests main.js
+server->browser:main.js
+browser->server:HTTP requests data.json
